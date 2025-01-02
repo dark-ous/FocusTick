@@ -1,0 +1,512 @@
+body{
+  font-family: 'Brugty';
+  background-color: rgb(46, 46, 46);
+ 
+}
+
+*::-webkit-scrollbar {
+  width: 00px;
+  scroll-behavior: smooth;
+}
+
+.container{
+  
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  margin-top: 0;
+ 
+}
+
+.content{
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgb(230, 230, 230);
+  height: 93vh;
+  border: 1px black solid;
+}
+
+.clockbox{
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.timer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 12px rgb(0, 255, 0);
+  margin-bottom: 20px;
+}
+.set-timer{
+  padding: 10px;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px
+}
+#set-timer{
+  width:100% ;
+  grid-column: span 3;
+ 
+}
+
+
+.interactbuttons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.interactbuttons .button:nth-child(1){
+  color: #000;
+  background-color:#00FF00;
+}
+.interactbuttons .button:nth-child(2){
+  color: #000;
+  background-color:#FFA500;
+}
+.interactbuttons .button:nth-child(3){
+  color: #000;
+  background-color: #ff0000b7;
+}
+.interactbuttons .button:nth-child(4){
+  color: #000;
+  background-color: #FF69B4;
+}
+.button {
+  --bg: #000;
+  --hover-bg: #16c9ba;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.taskbox{
+  justify-items: center;
+  grid-template-rows: 50px min-content;
+  padding: 10px;
+  display: grid;
+  min-height:500px;
+  overflow-y: scroll;
+}
+
+.tasklist{
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  text-align: left;
+  gap: 0px; 
+  padding: 10px;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+
+.tasks {
+  height: auto;
+  padding: 10px 0;
+  border-bottom: solid 1px black;
+}
+
+
+.weblink{
+  border: none;
+  background-color: #000;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px black solid;
+  
+}
+.web-shortcuts{
+  border: 1px black solid;
+  display: grid;
+  min-height:auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  border: 1px black solid;
+  padding: 20px;
+  height: 120px; 
+  border-radius: 12px; 
+
+}
+.smallcontent{
+  border-radius: 12px;
+
+  max-height:auto;
+ 
+  padding: 20px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  justify-content: center;
+  gap: 8px;
+  
+}
+
+.chatgpt {
+  color: rgb(255, 255, 255);
+  background-color: #0ea883;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/558/807/original/openai-chatgpt-logo-icon-free-png.png');
+    background-size:50px;
+  background-repeat: no-repeat;
+  text-align: right;
+    background-position: left;
+}
+.chatgpt:hover{
+  color: white;
+  background-color: #08ac84;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/024/558/807/original/openai-chatgpt-logo-icon-free-png.png');
+  background-size:50px;
+  background-repeat: no-repeat;
+  text-align: right;
+    background-position: left;
+    
+}
+
+
+.youtube {
+  background-color: white ;
+    background-image: url('https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg');
+    background-size: 100px;
+    background-position: center;
+    
+    background-repeat: no-repeat;
+}
+
+.youtube:hover {
+ 
+    background-image: url('https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg');
+    background-size: 100px;
+    background-position: center;
+    background-color: rgba(182, 0, 0, 0.432);
+    background-repeat: no-repeat;
+}
+
+.google {
+  background-color: white;
+  background-image: url('https://www.vectorlogo.zone/logos/google/google-ar21.svg');
+  background-size: 100px;
+  background-position: center;
+  
+  background-repeat: no-repeat;
+}
+
+.google:hover {
+  background-size: 100px;
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+  background-image: url('https://www.vectorlogo.zone/logos/google/google-ar21.svg');
+
+}
+
+.spotify {
+    background-image: url('https://www.vectorlogo.zone/logos/spotify/spotify-ar21.svg');
+    background-size: 100px;
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.spotify:hover {
+  background-size: 100px;
+    background-position: center;
+    background-color: rgba(35, 77, 27, 0.63);
+    background-repeat: no-repeat;
+    background-image: url('https://www.vectorlogo.zone/logos/spotify/spotify-ar21.svg');
+
+}
+
+.task-checkbox {
+  
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox-mark {
+  flex: 0 0 20px; /* Ensure the checkbox mark maintains a fixed size */
+  
+  height:20px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.custom-checkbox-mark::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background: #ff060698;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-checkbox:checked + .custom-checkbox-mark::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.task-text {
+  flex: 1; 
+}
+.task-completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+
+.taskform{
+  text-align: center;
+  border: 1px black solid;
+  background-color: rgb(230, 230, 230);
+  height: 220px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+}
+
+.input {
+  color: #000000;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-border {
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:focus + .input-border {
+  width: 100%;
+}
+
+.form-control {
+  position: relative;
+  
+}
+
+.input-alt {
+
+  font-size: 1.2rem;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-border-alt {
+  height: 3px;
+  background: linear-gradient(90deg, #000000 0%, #000000 50%, #000000 100%);
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+}
+
+.input-alt:focus + .input-border-alt {
+  width: 100%;
+}
+
+.addtask{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius:4px 4px 9.5px 9.5px ;
+  background-color: #1A1A1D;
+  width:100%;
+  height: 3rem;
+}
+
+.addtask:hover{
+  
+  color: black;
+  background-color: #16c9ba;
+  border:1px solid rgb(0, 0, 0);
+}
+
+
+.ulbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.header-container h2 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0; 
+}
+
+.remove-task {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+
+.status{
+  justify-items: center;
+  grid-template-rows: 50px min-content;
+  padding: 10px;
+  display: grid;
+  min-height:500px;
+  overflow-y: scroll;
+}
+.datetime{
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(autofill,20px);
+  align-items: center;
+  justify-items: center;
+  border-radius: 12px;
+  font-size: 45px;
+  gap:0px;
+  text-align: center;
+}
+.date{
+  color:rgb(230, 230, 230) ;
+  -webkit-text-stroke: 2px black;
+}
+.day , .time{
+  
+
+  font-size: 30px;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+.notepad{
+  all:unset;
+  width: 300px;
+  min-height: 450px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5px;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  overflow: scroll;
+  word-wrap: break-word;
+}
+
+
+.notepad-buttons{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.save-notepad{
+  width: 150px;
+  
+}
+.fullscreen-notepad {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 50px;
+ 
+}
+
+.fullscreen-notepad svg {
+  fill: white;
+  width: 100%;
+  height: 100%;
+}
+.close-fullscreen-notepad svg {
+  fill: white;
+  width: 100%;
+  height: 100%;
+}
+.fullscreen {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  
+  justify-content: space-between;
+}
+
+
+.close-fullscreen-notepad {
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  width: 80px;
+  height: 0px;
+}
