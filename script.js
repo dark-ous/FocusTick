@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const now = new Date();
 
         const day = now.toLocaleDateString('en-US', { weekday: 'long' });
-        const date = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        const date = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
         const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit'});
 
         container.innerHTML = `

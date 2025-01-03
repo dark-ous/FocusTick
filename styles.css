@@ -1,7 +1,7 @@
 body{
   font-family: 'Brugty';
   background-color: rgb(46, 46, 46);
- 
+
 }
 
 *::-webkit-scrollbar {
@@ -462,7 +462,7 @@ body{
 }
 .save-notepad{
   width: 150px;
-  
+  height: 40px;
 }
 .fullscreen-notepad {
   color: rgb(255, 255, 255);
@@ -471,9 +471,8 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border-radius: 8px;
   width: 50px;
- 
+  height: 40px;
 }
 
 .fullscreen-notepad svg {
